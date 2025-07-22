@@ -29,9 +29,22 @@
 		210AF5E52E30087B0027A86F /* MapAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		210AF5FC2E3008FB0027A86F /* Exceptions for "MapAppSwift" folder in "MapAppSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 210AF5E42E30087B0027A86F /* MapAppSwiftUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		210AF5D02E30087A0027A86F /* MapAppSwift */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				210AF5FC2E3008FB0027A86F /* Exceptions for "MapAppSwift" folder in "MapAppSwiftUITests" target */,
+			);
 			path = MapAppSwift;
 			sourceTree = "<group>";
 		};
