@@ -51,17 +51,14 @@ extension LocationView {
                 .foregroundStyle(.primary)
                 .frame(height: 55)
                 .frame(maxWidth: .infinity)
+                .animation(.none, value: vm.mapLocation)
                 .overlay(alignment: .leading) {
-                    if vm.showLocationList == true {
                         Image(systemName: "arrow.down")
                             .font(.headline)
-                    } else {
-                        Image(systemName: "arrow.up")
-                            .font(.headline)
-                    }
+                            .padding(.horizontal)
+                            .foregroundStyle(.primary)
+                            .rotationEffect(Angle(degrees: vm.showLocationList ? 180 : 0))
                 }
-                .padding(.horizontal)
-                .foregroundStyle(.primary)
             }
             .foregroundStyle(.primary)
 
