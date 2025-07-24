@@ -24,7 +24,7 @@ struct LocationView: View {
             VStack(spacing: 0) {
                 
                 header
-                    .padding()
+                    .padding(.horizontal)
                 
                 Spacer()
             }
@@ -41,24 +41,36 @@ extension LocationView {
     
     private var header: some View {
         VStack {
-            Text(vm.mapLocation.name + ", "
-                 + vm.mapLocation.cityName)
-            .font(.title2)
-            .fontWeight(.black)
+            Button {
+                vm.toggleLocationList()
+            } label: {
+                Text(vm.mapLocation.name + ", "
+                     + vm.mapLocation.cityName)
+                .font(.title2)
+                .fontWeight(.black)
+                .foregroundStyle(.primary)
+                .frame(height: 55)
+                .frame(maxWidth: .infinity)
+                .overlay(alignment: .leading) {
+                    if vm.showLocationList == true {
+                        Image(systemName: "arrow.down")
+                            .font(.headline)
+                    } else {
+                        Image(systemName: "arrow.up")
+                            .font(.headline)
+                    }
+                }
+                .padding(.horizontal)
+                .foregroundStyle(.primary)
+            }
             .foregroundStyle(.primary)
-            .frame(height: 55)
-            .frame(maxWidth: .infinity)
-            .background(Color.red)
-            .overlay(alignment: .leading) {
-                Image(systemName: "arrow.down")
-                    .font(.headline)
-                    .foregroundStyle(.primary)
-                    .padding()
+
+            if vm.showLocationList {
+                LocationsListView()
             }
         }
         .background(.thickMaterial)
         .cornerRadius(10)
         .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 16)
     }
-    
 }
