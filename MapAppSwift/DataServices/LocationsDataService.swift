@@ -65,6 +65,46 @@ class LocationsDataService {
                 "paris-louvre-3",
             ],
             link: "https://en.wikipedia.org/wiki/Louvre"),
+        
+        Location(
+                   name: "Statue of Liberty",
+                   cityName: "New York",
+                   coordinates: CLLocationCoordinate2D(latitude: 40.6892, longitude: -74.0445),
+                   description: "A colossal neoclassical sculpture on Liberty Island in New York Harbor, gifted by France to the U.S. in 1886.",
+                   imageNames: ["nyc-liberty-1", "nyc-liberty-2"],
+                   link: "https://en.wikipedia.org/wiki/Statue_of_Liberty"),
+               
+               Location(
+                   name: "Sydney Opera House",
+                   cityName: "Sydney",
+                   coordinates: CLLocationCoordinate2D(latitude: -33.8568, longitude: 151.2153),
+                   description: "An iconic performing arts centre in Sydney, Australia, known for its unique sail-like design.",
+                   imageNames: ["sydney-opera-1", "sydney-opera-2"],
+                   link: "https://en.wikipedia.org/wiki/Sydney_Opera_House"),
+
+               Location(
+                   name: "Tokyo Tower",
+                   cityName: "Tokyo",
+                   coordinates: CLLocationCoordinate2D(latitude: 35.6586, longitude: 139.7454),
+                   description: "A communications and observation tower in Tokyo, Japan, inspired by the Eiffel Tower and painted in white and orange.",
+                   imageNames: ["tokyo-tower-1", "tokyo-tower-2"],
+                   link: "https://en.wikipedia.org/wiki/Tokyo_Tower"),
+
+               Location(
+                   name: "Pyramids of Giza",
+                   cityName: "Cairo",
+                   coordinates: CLLocationCoordinate2D(latitude: 29.9792, longitude: 31.1342),
+                   description: "The last of the Seven Wonders of the Ancient World still standing, the Giza pyramid complex is a marvel of ancient engineering.",
+                   imageNames: ["cairo-pyramids-1", "cairo-pyramids-2"],
+                   link: "https://en.wikipedia.org/wiki/Giza_pyramid_complex"),
+
+               Location(
+                   name: "Christ the Redeemer",
+                   cityName: "Rio de Janeiro",
+                   coordinates: CLLocationCoordinate2D(latitude: -22.9519, longitude: -43.2105),
+                   description: "An iconic statue of Jesus Christ overlooking Rio de Janeiro, Brazil, considered one of the New Seven Wonders of the World.",
+                   imageNames: ["rio-christ-1", "rio-christ-2"],
+                   link: "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)")
     ]
     
 }
