@@ -20,6 +20,14 @@ struct LocationView: View {
         ZStack {
             Map(coordinateRegion: $vm.mapRegion)
                 .ignoresSafeArea()
+            
+            VStack(spacing: 0) {
+                
+                header
+                    .padding()
+                
+                Spacer()
+            }
         }
     }
 }
@@ -29,3 +37,28 @@ struct LocationView: View {
         .environmentObject(LocationsViewModel())
 }
 
+extension LocationView {
+    
+    private var header: some View {
+        VStack {
+            Text(vm.mapLocation.name + ", "
+                 + vm.mapLocation.cityName)
+            .font(.title2)
+            .fontWeight(.black)
+            .foregroundStyle(.primary)
+            .frame(height: 55)
+            .frame(maxWidth: .infinity)
+            .background(Color.red)
+            .overlay(alignment: .leading) {
+                Image(systemName: "arrow.down")
+                    .font(.headline)
+                    .foregroundStyle(.primary)
+                    .padding()
+            }
+        }
+        .background(.thickMaterial)
+        .cornerRadius(10)
+        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 16)
+    }
+    
+}
