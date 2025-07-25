@@ -14,6 +14,8 @@ class LocationsViewModel: ObservableObject {
     
     @Published var showLocationList: Bool = false
     
+    @Published var sheetLocation: Location? = nil
+    
     init() {
         let locations = LocationsDataService.locations
         let firstLocation = locations.first!
