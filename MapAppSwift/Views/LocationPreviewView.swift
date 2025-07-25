@@ -1,10 +1,3 @@
-//
-//  LocationPreviewView.swift
-//  MapAppSwift
-//
-//  Created by Djordje on 24. 7. 2025..
-//
-
 import SwiftUI
 
 struct LocationPreviewView: View {
