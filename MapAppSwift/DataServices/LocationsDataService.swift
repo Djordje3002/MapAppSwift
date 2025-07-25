@@ -97,6 +97,13 @@ class LocationsDataService {
                    description: "The last of the Seven Wonders of the Ancient World still standing, the Giza pyramid complex is a marvel of ancient engineering.",
                    imageNames: ["cairo-pyramids-1", "cairo-pyramids-2"],
                    link: "https://en.wikipedia.org/wiki/Giza_pyramid_complex"),
+        
+                Location(
+                    name: "Sutjeskina 2",
+                    cityName: "Vranje",
+                    coordinates: CLLocationCoordinate2D(latitude: 42.55778, longitude: 21.90000),                    description: "One of the most famous streets in Vranje and Serbia with a rich history. It is a popular spot for tourists and locals alike. ",
+                    imageNames: ["cairo-pyramids-1", "cairo-pyramids-2"],
+                    link: "https://en.wikipedia.org/wiki/Giza_pyramid_complex"),
 
                Location(
                    name: "Christ the Redeemer",
